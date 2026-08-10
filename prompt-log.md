@@ -138,3 +138,9 @@ option premiums ($0.019 put / $0.024 call).
 - **AI output:** Confirmed an exact match — Forward ($23,380,000), Money Market ($23,379,769), and implied forward (1.1690) all matched the workbook precisely; recorded the result in the memo's §5, along with a documented (not erroneous) convention difference on the Options tab premium timing (Lab uses simple premium, workbook future-values it per the Stage 2 template).
 - **My edit:** N/A — cross-check passed as-is.
 **Deliverable:** `data/2026-08-05-Scofield-market-data.md`; workbook re-committed with live data
+
+## Stage 5 — LLM Analysis & Validation (2026-08-10)
+
+| # | Prompt (as given) | Model | Output / disposition |
+|---|---|---|---|
+| 1 | Two GitHub links (`docs/specs/2026-07-30-Scofield-aerospace-spec.md`, `data/2026-08-05-Scofield-market-data.md`) + *"on these alone, produce the complete hedge analysis independently."* | Claude (Sonnet 5, claude.ai) | Full independent hedge analysis: derived values, three-strategy calc walk, 11-row sensitivity grid, summary metrics, chart, recommendation. Delivered inline + as `Aerospace_FX_Hedge_Analysis.docx` on request. |
